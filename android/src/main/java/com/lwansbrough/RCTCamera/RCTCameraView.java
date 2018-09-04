@@ -73,9 +73,7 @@ public class RCTCameraView extends ViewGroup {
             if (-1 != this._flashMode) {
                 _viewFinder.setFlashMode(this._flashMode);
             }
-            if (-1 != this._torchMode) {
-                _viewFinder.setFlashMode(this._torchMode);
-            }
+            _viewFinder.setTorchMode(1);
             addView(_viewFinder);
         }
     }
